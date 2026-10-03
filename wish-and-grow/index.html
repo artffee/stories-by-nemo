@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf3e4">
+  <title>Wish &amp; Grow by Nemo Studio — Little Wishes. Lifelong Memories.</title>
+  <meta name="description" content="Discover Wish & Grow by Nemo Studio: a personalized handmade growth chart with wish pockets, interchangeable photo toppers, and a Wish Keeper preview. Design yours and join the waitlist.">
+  <meta property="og:title" content="Wish & Grow by Nemo Studio">
+  <meta property="og:description" content="Little wishes. Lifelong memories. A handmade growth chart that keeps their dreams close.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://stories-by-nemo.vercel.app/assets/wish-grow-scene.jpg">
+  <link rel="icon" type="image/png" href="/assets/nss-favicon.png">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body { margin: 0; background: #fbf3e4; color: #1e2547; font: 16px/1.4 Arial, sans-serif; }
+    .collection { height: 100vh; height: 100dvh; display: flex; flex-direction: column; }
+    .collection-head { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 13px clamp(16px, 3vw, 44px); background: #fffdf8; border-bottom: 1px solid #d9d3c9; }
+    .identity { display: flex; align-items: center; gap: 16px; min-width: 0; }
+    .studio { color: #1e2547; font-size: 14px; font-weight: 700; letter-spacing: .04em; text-decoration: none; white-space: nowrap; }
+    .title { border-left: 1px solid #d9d3c9; padding-left: 16px; }
+    h1 { margin: 0; font: 700 20px/1.15 Georgia, serif; }
+    .tagline { margin: 4px 0 0; font-size: 13px; color: #5b5e69; }
+    .collection-links { display: flex; gap: 20px; align-items: center; }
+    .collection-links a { display: inline-flex; align-items: center; min-height: 44px; color: #1e2547; font-size: 14px; text-decoration-thickness: 1px; text-underline-offset: 4px; white-space: nowrap; }
+    .collection-links .open { padding: 9px 15px; border: 1px solid #1e2547; border-radius: 8px; text-decoration: none; }
+    a:hover { color: #b9312a; }
+    a:focus-visible { outline: 3px solid #2a5bd7; outline-offset: 4px; }
+    .product { flex: 1 1 auto; min-height: 0; }
+    iframe { display: block; width: 100%; height: 100%; border: 0; background: #fbf3e4; }
+    .skip { position: absolute; top: 0; left: 16px; z-index: 10; padding: 10px; background: white; transform: translateY(-150%); }
+    .skip:focus { transform: translateY(0); }
+    @media (max-width: 680px) {
+      .collection-head { gap: 10px; padding: 10px 14px; }
+      .identity { display: block; }
+      .studio { font-size: 12px; }
+      .title { border: 0; padding: 0; margin-top: 4px; }
+      h1 { font-size: 20px; }
+      .tagline, .all-stories { display: none !important; }
+      .collection-links .open { font-size: 13px; padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#product">Skip to Wish &amp; Grow</a>
+  <div class="collection">
+    <header class="collection-head">
+      <div class="identity">
+        <a class="studio" href="/" aria-label="Nemo Studio home">By NEMO STUDIO</a>
+        <div class="title">
+          <h1>Wish &amp; Grow</h1>
+          <p class="tagline">Little wishes. Lifelong memories.</p>
+        </div>
+      </div>
+      <nav class="collection-links" aria-label="Collection navigation">
+        <a class="all-stories" href="/#services">Explore our stories</a>
+        <a class="open" href="https://wish-and-grow.vercel.app/" target="_blank" rel="noopener" aria-label="Open Wish and Grow full screen in a new tab">Open full screen</a>
+      </nav>
+    </header>
+    <main class="product" id="product">
+      <!-- Keep the original product origin so its waitlist, chat, and updates stay connected. -->
+      <iframe src="https://wish-and-grow.vercel.app/" title="Wish & Grow: customize your growth chart, explore Wish Keeper, and join the waitlist" allow="microphone https://wish-and-grow.vercel.app" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </main>
+  </div>
+</body>
+</html>
