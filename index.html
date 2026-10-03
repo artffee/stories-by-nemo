@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f2e8">
-  <meta name="description" content="Stories by NEMO turns photographs, memories and milestones into personalized magazines for love stories, birthdays, new homes and creative portfolios.">
+  <meta name="description" content="Discover personalized story magazines and handmade collections from Nemo Studio: Wish & Grow growth charts and playful retro mailbox designs.">
   <title>Stories by NEMO — Your Life, Designed as a Story</title>
   <link rel="icon" type="image/png" sizes="192x192" href="assets/nss-favicon.png">
   <style>
@@ -1772,13 +1772,18 @@
       .theme-organic *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
     }
   </style>
+  <link rel="stylesheet" href="/assets/collections.css">
+  <script src="/assets/collection-nav.js" defer></script>
 </head>
 <body class="theme-gallery theme-organic">
   <header class="site-head">
     <div class="shell nav">
       <a class="brand" href="#top"><img class="brand-logo" src="assets/stories-by-nemo-logo.png" alt="Stories by Nemo" width="1983" height="793"></a>
-      <nav class="nav-links" aria-label="Main navigation">
+      <button class="nav-toggle" type="button" aria-controls="main-navigation" aria-expanded="false">Menu</button>
+      <nav class="nav-links" id="main-navigation" aria-label="Main navigation">
         <a href="#services">Stories</a>
+        <a href="/wish-and-grow/">Wish &amp; Grow</a>
+        <a href="/mailboxes/">Mailboxes</a>
         <a href="#muse">NEMO Muse</a>
         <a href="#process">Process</a>
         <a href="#archive">Magazine</a>
@@ -1802,6 +1807,7 @@
           <span>Delivered as a polished PDF</span>
           <span>One revision included</span>
         </div>
+        <p class="collection-teaser">Also from Nemo Studio: <a href="#handmade">handmade objects with a story.</a></p>
         <a class="scroll-cue" href="#services">Scroll to explore <span aria-hidden="true">↓</span></a>
       </div>
       <div class="story-stack" aria-label="Examples of Stories by NEMO magazines">
@@ -1880,6 +1886,40 @@
               <span class="price">From $49</span>
               <button class="text-link js-pick" data-story="artist">Build this story</button>
             </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell" id="handmade" aria-labelledby="handmade-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Handmade collections / By Nemo Studio</p>
+          <h2 id="handmade-title">Objects with a story.</h2>
+        </div>
+        <p class="section-note">For the little wishes growing at home, and the first hello at your front door.</p>
+      </div>
+      <div class="handmade-grid">
+        <article class="handmade-card">
+          <a class="handmade-image" href="/wish-and-grow/" aria-label="Explore the Wish and Grow collection">
+            <img src="/assets/wish-grow-scene.jpg" alt="Wish and Grow growth chart with a robot photo topper, personalized name, and colorful wish pockets" loading="lazy" width="717" height="1075">
+          </a>
+          <div class="handmade-body">
+            <p class="eyebrow">Little wishes. Lifelong memories.</p>
+            <h3>Wish &amp; Grow</h3>
+            <p>A personalized growth chart with four wish pockets and a photo topper that changes as they grow. Choose a character, try their name, and join the waitlist.</p>
+            <a class="btn primary" href="/wish-and-grow/">Explore Wish &amp; Grow</a>
+          </div>
+        </article>
+        <article class="handmade-card mailboxes">
+          <a class="handmade-image" href="/mailboxes/" aria-label="Explore the Retro Mailboxes collection">
+            <img src="/assets/mailbox-play.jpg" alt="Black retro game-inspired mailbox design with a PLAY label, colorful symbols, and blue accent" loading="lazy" width="1712" height="1152">
+          </a>
+          <div class="handmade-body">
+            <p class="eyebrow">A little nostalgia at the front door.</p>
+            <h3>Retro Mailboxes</h3>
+            <p>Everyday mail, with a playful personality. Explore the silver INSERT and black PLAY designs, then ask us about creating one for your home.</p>
+            <a class="btn primary" href="/mailboxes/">Explore mailboxes</a>
           </div>
         </article>
       </div>
@@ -2153,8 +2193,8 @@
           <p>Most editions are delivered within five business days after all photographs and answers arrive. A 48-hour option is available for suitable projects.</p>
         </details>
         <details>
-          <summary>Is anything physically shipped?</summary>
-          <p>The standard product is a high-resolution digital PDF. A print-ready option prepares the file for professional printing; physical printing will be offered separately.</p>
+          <summary>How are stories and handmade collections delivered?</summary>
+          <p>Story editions are delivered as high-resolution digital PDFs, with a print-ready option available. Wish &amp; Grow is a physical growth-chart collection currently taking waitlist signups. For retro mailboxes, contact the studio to confirm the design, price, and delivery arrangements before ordering.</p>
         </details>
         <details>
           <summary>Are children's photographs kept private?</summary>
@@ -2179,6 +2219,8 @@
       <div class="footer-links">
         <a href="#services">Services</a>
         <a href="#archive">Magazine</a>
+        <a href="/wish-and-grow/">Wish &amp; Grow</a>
+        <a href="/mailboxes/">Mailboxes</a>
         <a href="https://www.facebook.com/share/1P5DaMYcrh/" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>

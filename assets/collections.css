@@ -1,0 +1,29 @@
+/* Handmade collections extend the existing Stories by NEMO theme. */
+.theme-organic .nav-links { gap: clamp(14px, 1.6vw, 25px); }
+.nav-toggle { display: none; }
+.collection-teaser { margin: 18px 0 0; font-size: 14px; }
+.collection-teaser a { text-underline-offset: 4px; }
+#handmade { scroll-margin-top: 100px; }
+.handmade-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+.handmade-card { overflow: hidden; border: 1px solid var(--line); border-radius: 28px; background: #fffdf8; }
+.handmade-image { display: block; padding: 22px; background: #f4eee4; }
+.handmade-image img { display: block; width: 100%; height: 380px; object-fit: contain; border-radius: 12px; }
+.handmade-card.mailboxes .handmade-image { background: #eae8e4; }
+.handmade-body { padding: clamp(24px, 3vw, 40px); }
+.handmade-body .eyebrow { font-size: 12px; }
+.handmade-body h3 { margin: 12px 0 14px; font: 400 clamp(2.5rem, 4vw, 4rem)/1.05 Georgia, serif; letter-spacing: -.04em; }
+.handmade-body p { max-width: 48ch; color: #5f554e; font-size: 17px; }
+.handmade-body .btn { margin-top: 12px; min-height: 48px; font-size: 12px; }
+@media (max-width: 1100px) {
+  .theme-organic .nav { position: relative; }
+  .nav-toggle { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px; border: 1px solid var(--ink); border-radius: 999px; background: transparent; color: var(--ink); font-size: 14px; cursor: pointer; }
+  .theme-organic .nav-links { display: none; position: absolute; top: calc(100% + 16px); right: 0; width: min(340px, calc(100vw - 28px)); max-height: 75svh; overflow: auto; padding: 16px; background: #fffdf8; border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 18px 35px #2b262322; }
+  .theme-organic .nav-links.is-open { display: grid; gap: 4px; }
+  .theme-organic .nav-links a:not(.nav-cta), .theme-organic .nav-links .nav-cta { display: flex; align-items: center; min-height: 46px; padding: 10px 14px; font-size: 14px; letter-spacing: .05em; }
+}
+@media (max-width: 760px) {
+  .handmade-grid { grid-template-columns: 1fr; gap: 24px; }
+  .handmade-image { padding: 16px; }
+  .handmade-image img { height: 320px; }
+  .handmade-body .btn { letter-spacing: .08em; padding-inline: 18px; }
+}
